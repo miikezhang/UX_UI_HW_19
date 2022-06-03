@@ -3,15 +3,22 @@
   <head>
     <title>Homework 17 Solved</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <header>
       <img src="images/logo.png">
-      <ul>
-        <li>ABOUT ME</li>
-        <li>SKILLS I HAVE</li>
-        <li>WORK</li>
-        <li>CONTACT</li>
+      <ul class="navigation">
+        <li class="navItem">ABOUT</li>
+        <li class="navItem">SKILLS</li>
+        <li id="workDrop" class="navItem">WORK ↓  
+          <ul class="workList">
+            <li><a href="#HamiCanada">Hami Canada</a></li>
+            <li><a href="#CBSA">Canada Border Services Agency</a></li>
+            <li><a href="#BackyardMovement">Backyard Movement</a></li>
+          </ul>
+        </li>
+        <li class="navItem">CONTACT</li>
       </ul>
     </header>
     <section class="heroImg">
@@ -79,4 +86,5 @@
       </ul>
     </footer>
   </body>
+  <script src="js/index.js"></script>
 </html>

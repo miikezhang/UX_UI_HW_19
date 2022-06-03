@@ -2,16 +2,24 @@ body {
   margin: 0;
 }
 header {
-  background-color: #373738;
   padding: 15px;
 }
 header ul {
-  float: right;
-  color: white;
+  
+  color: black;
 }
-header li {
-  display: inline-block;
+
+.navigation {
+  display: flex;
+  float: right;
+  align-items: flex-start;
+}
+
+.navItem {
   padding: 0px 5px;
+  list-style: none;
+  width: 100px;
+
 }
 header p {
   display: inline-block;
@@ -104,4 +112,28 @@ footer li {
 }
 .content3 {
   grid-area: content3;
+}
+
+.workList {
+  display: none;
+  border: 1px solid black;
+}
+
+.workList li {
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 10px;
+  background-color: grey;
+  color: white;
+}
+
+.workList li:hover {
+  background-color: beige;
+}
+
+
+
+ul {
+  padding-inline-start: 0px;
 }
